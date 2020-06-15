@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/save_linear_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hiad_emui_white"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/save_nameTW"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="save_name"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/save_descriptionTW"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="save_description"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/play_time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="play_time"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+</LinearLayout>

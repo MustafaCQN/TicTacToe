@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBG"
+    tools:context="com.mustafacqn.tictactoe.multiplayer.NearbyMulti">
+
+    <RelativeLayout
+        android:id="@+id/waitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Wait, Connection is Establishing..."
+            android:textSize="20dp"
+            android:paddingTop="200dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Player 1 0"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_view_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_p1"
+            android:freezesText="true"
+            android:text="Player 2 0"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_reset_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="33dp"
+            android:text="reset"
+            android:background="@color/resetDefault"
+            android:textColor="@color/hiad_emui_white"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gameButtonColor"
+            android:freezesText="true"
+            android:textSize="100sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

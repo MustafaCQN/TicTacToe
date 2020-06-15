@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hwads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/the_unseen"
+            android:text="Tic Tac Toe"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mainBG"
+            android:background="@drawable/main_bg"
+            android:textSize="50sp"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_layout"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_huaweiid"
+            android:onClick="huaweiIdStart"
+            android:text="Single Phone Multiplayer"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mainBG"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/button_multi_nearby"
+            android:onClick="nearbyMulti"
+            android:text="Nearby Multiplayer"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mainBG"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_loadGame"
+            android:onClick="loadGame"
+            android:text="Load Game"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mainBG"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_leaderboard"
+            android:onClick="leaderboard"
+            android:text="Leaderboard"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mainBG"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_achievements"
+            android:onClick="achievements"
+            android:text="Achievements"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/mainBG"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/the_unseen"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

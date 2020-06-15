@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBG"
+    tools:context="com.mustafacqn.tictactoe.multiplayer.NearbyMainPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby Multiplayer"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textColor="@color/upsdk_white"/>
+
+    <EditText
+        android:id="@+id/yourNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="yourName"
+        android:nextFocusDown="@id/friendsNameET" />
+
+    <EditText
+        android:id="@+id/friendsNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="friendsName" />
+
+    <Button
+        android:id="@+id/connectBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect!"
+        android:onClick="startConnection"
+        android:textAllCaps="false" />
+</LinearLayout>

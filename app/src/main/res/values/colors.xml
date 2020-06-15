@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#9A9595</color>
+    <color name="colorPrimaryDark123">#3700B3</color>
+    <color name="colorAccent">#97C8FA</color>
+    <color name="playerOne">#A30000</color>
+    <color name="playerTwo">#0000A3</color>
+    <color name="mainBG">#9A9595</color>
+    <color name="gameButtonColor">#E4E4E4</color>
+    <color name="resetDefault">#000000</color>
+    <color name="resetOnePlayer">#BABA07</color>
+    <color name="resetTwoPlayer">#0A750A</color>
+    <color name="black">#000000</color>
+</resources>
